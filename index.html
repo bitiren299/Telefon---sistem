@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -5,51 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Telefon Mağazası</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
     <h1>Telefon Mağazası</h1>
-    <nav>
-      <a href="#">Anasayfa</a>
-      <a href="#">Ürünler</a>
-      <a href="#">Hakkımızda</a>
-      <a href="#">İletişim</a>
-      <a href="#">Sepetim</a>
-    </nav>
   </header>
-
-  <main class="container">
-    <div class="product">
-  <img src="https://productimages.hepsiburada.net/s/441/550/110000470505155.jpg" alt="Samsung Galaxy S24">
-  <h3>Samsung Galaxy S24</h3>
-  <p>Fiyat: 32.499₺</p>
-  <button>Sepete Ekle</button>
-</div>
-
-    <div class="product">
-  <img src="https://productimages.hepsiburada.net/s/422/550/110000443700119.jpg" alt="iPhone 15 Pro">
-  <h3>iPhone 15 Pro</h3>
-  <p>Fiyat: 62.999₺</p>
-  <button>Sepete Ekle</button>
-</div>
-
-    <div class="product">
-      <img src="https://cdn.vatanbilgisayar.com/Upload/PRODUCT/xiaomi/thumb/132456_large.jpg" alt="Xiaomi 14">
+  <nav>
+    <a href="index.html">Anasayfa</a>
+    <a href="index.html#products">Ürünler</a>
+    <a href="#">Hakkımızda</a>
+    <a href="#">İletişim</a>
+    <a href="#">Sepetim</a>
+  </nav>
+  <div class="container" id="products">
+    <div class="product" data-name="Samsung Galaxy S24" data-price="32499">
+      <img src="https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s24.jpg" alt="Samsung Galaxy S24" style="width:150px;">
+      <h3>Samsung Galaxy S24</h3>
+      <p>Fiyat: 32.499₺</p>
+      <button>Sepete Ekle</button>
+    </div>
+    <div class="product" data-name="iPhone 15 Pro" data-price="62999">
+      <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro.jpg" alt="iPhone 15 Pro" style="width:150px;">
+      <h3>iPhone 15 Pro</h3>
+      <p>Fiyat: 62.999₺</p>
+      <button>Sepete Ekle</button>
+    </div>
+    <div class="product" data-name="Xiaomi 14" data-price="29999">
+      <img src="https://fdn2.gsmarena.com/vv/bigpic/xiaomi-14.jpg" alt="Xiaomi 14" style="width:150px;">
       <h3>Xiaomi 14</h3>
       <p>Fiyat: 29.999₺</p>
       <button>Sepete Ekle</button>
     </div>
-
-    <div class="product">
-      <img src="https://cdn.vatanbilgisayar.com/Upload/PRODUCT/realme/thumb/132352_large.jpg" alt="Realme 12 Pro+">
+    <div class="product" data-name="Realme 12 Pro+" data-price="19499">
+      <img src="https://fdn2.gsmarena.com/vv/bigpic/realme-12-pro-plus.jpg" alt="Realme 12 Pro+" style="width:150px;">
       <h3>Realme 12 Pro+</h3>
       <p>Fiyat: 19.499₺</p>
       <button>Sepete Ekle</button>
     </div>
-  </main>
-
+  </div>
   <footer>
-    <p>© 2025 Telefon Mağazası - Tüm hakları saklıdır.</p>
+    <p>&copy; 2025 Telefon Mağazası - Tüm hakları saklıdır.</p>
   </footer>
 </body>
 </html>
