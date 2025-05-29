@@ -3,50 +3,38 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Telefon Mağazası</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
 </head>
 <body>
   <header>
     <h1>Telefon Mağazası</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Anasayfa</a></li>
+        <li><a href="#">Ürünler</a></li>
+        <li><a href="#">İletişim</a></li>
+      </ul>
+    </nav>
   </header>
-  <nav>
-    <a href="index.html">Anasayfa</a>
-    <a href="index.html#products">Ürünler</a>
-    <a href="#">Hakkımızda</a>
-    <a href="#">İletişim</a>
-    <a href="#">Sepetim</a>
-  </nav>
-  <div class="container" id="products">
-    <div class="product" data-name="Samsung Galaxy S24" data-price="32499">
-      <img src="https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s24.jpg" alt="Samsung Galaxy S24" style="width:150px;">
-      <h3>Samsung Galaxy S24</h3>
-      <p>Fiyat: 32.499₺</p>
-      <button>Sepete Ekle</button>
-    </div>
-    <div class="product" data-name="iPhone 15 Pro" data-price="62999">
-      <img src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro.jpg" alt="iPhone 15 Pro" style="width:150px;">
-      <h3>iPhone 15 Pro</h3>
-      <p>Fiyat: 62.999₺</p>
-      <button>Sepete Ekle</button>
-    </div>
-    <div class="product" data-name="Xiaomi 14" data-price="29999">
-      <img src="https://fdn2.gsmarena.com/vv/bigpic/xiaomi-14.jpg" alt="Xiaomi 14" style="width:150px;">
-      <h3>Xiaomi 14</h3>
-      <p>Fiyat: 29.999₺</p>
-      <button>Sepete Ekle</button>
-    </div>
-    <div class="product" data-name="Realme 12 Pro+" data-price="19499">
-      <img src="https://fdn2.gsmarena.com/vv/bigpic/realme-12-pro-plus.jpg" alt="Realme 12 Pro+" style="width:150px;">
-      <h3>Realme 12 Pro+</h3>
-      <p>Fiyat: 19.499₺</p>
-      <button>Sepete Ekle</button>
-    </div>
-  </div>
+
+  <main>
+    <section class="product-list">
+      <div class="product-card">
+        <img src="images/phone1.jpg" alt="Telefon 1" />
+        <h3>Telefon Modeli 1</h3>
+        <p>₺5.000</p>
+        <button class="add-to-cart">Sepete Ekle</button>
+      </div>
+      <!-- Diğer ürün kartları buraya eklenebilir -->
+    </section>
+  </main>
+
   <footer>
-    <p>&copy; 2025 Telefon Mağazası - Tüm hakları saklıdır.</p>
+    <p>&copy; 2025 Telefon Mağazası. Tüm hakları saklıdır.</p>
   </footer>
+<script src="script.js"></script>
 </body>
 </html>
+
