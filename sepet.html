@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sepetim</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Sepetim</h1>
+  </header>
+  <nav>
+    <a href="index.html">Anasayfa</a>
+    <a href="index.html#products">Ürünler</a>
+    <a href="#">Hakkımızda</a>
+    <a href="#">İletişim</a>
+  </nav>
+  <div class="container" id="cart-container"></div>
+  <footer>
+    &copy; 2025 Telefon Mağazası - Tüm hakları saklıdır.
+  </footer>
+  <script>
+    const container = document.getElementById('cart-container');
+    const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+    if (cart.length === 0) {
+      container.innerHTML = '<p>Sepetiniz boş.</p>';
+    } else {
+      container.innerHTML = cart.map(item => `
+        <div class='product'>
+          <h3>\${item.name}</h3>
+          <p>Fiyat: \${item.price}₺</p>
+        </div>
+      `).join('');
+    }
+  </script>
+</body>
+</html>
